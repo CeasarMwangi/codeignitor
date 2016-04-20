@@ -1,0 +1,78 @@
+add the .htaccess file it the root of the project
+
+----------------------------------------------------------------------------
+
+remove the index.php 
+
+	config/config.php
+	$config['index_page'] = '';
+----------------------------------------------------------------------------
+
+
+set the base url
+
+	config/config.php
+	$config['base_url'] = 'http://localhost/nairobits.com/';
+
+----------------------------------------------------------------------------
+autoload helper classes
+	-form
+	-url
+	-html
+	-
+
+	config/autoload.php
+	$autoload['libraries'] = array('database', 'session','pagination');
+----------------------------------------------------------------------------
+
+autoload libraries classes
+	-database
+	-session
+	-form_validation
+
+	config/autoload.php
+	$autoload['helper'] = array('url','html');
+----------------------------------------------------------------------------
+
+add the encryption key 
+
+	config/config.php
+	$config['encryption_key'] = 'AIzaSyBtW7Y9VM1VFUMZAbnhzHHX2d7TKZwz6uM';
+----------------------------------------------------------------------------
+
+add the database credentials
+
+	config/database.php
+	$db['default'] = array(
+		'dsn'	=> '',
+		'hostname' => 'localhost',
+		'username' => 'xxxxx',
+		'password' => 'xxxxx',
+		'database' => 'xxxxx',
+
+
+	);
+----------------------------------------------------------------------------
+
+edit your routes
+
+	config/routes.php
+	$route['register'] = 'register';
+	$route['default_controller'] = 'login';
+
+----------------------------------------------------------------------------
+
+edit your controller
+
+
+----------------------------------------------------------------------------
+edit your views
+
+
+
+----------------------------------------------------------------------------
+edit your models
+
+
+----------------------------------------------------------------------------
+
